@@ -16,7 +16,7 @@ public class MonthServiceTest {
     })*/
     @CsvFileSource(files="src/test/resources/month.csv")
     public void testMonthHoliday(int expected, int income, int expenses, int threshold) {
-        ru.netology.javaqa.javaqa6.services.MonthService service = new ru.netology.javaqa.javaqa6.services.MonthService();
+        MonthService service = new MonthService();
 
 //        int expected = 2;
         int actual = service.calculate(income, expenses, threshold);
